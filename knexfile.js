@@ -21,8 +21,8 @@ const customConfig = {
   test: {
     connection: {
       database: "nc_news_test",
-      username: ian,
-      password: password,
+      username: "ian",
+      password: "password",
     },
   },
 };

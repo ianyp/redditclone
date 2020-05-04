@@ -7,7 +7,8 @@
     "setup-dbs": "psql -f ./db/setup.sql",
     "seed": "knex seed:run",
     "test-utils": "jest spec/utils.spec.js",
-    "test": "jest spec/app.spec.js"
+    "test": "jest spec/app.spec.js",
+    "migrate-make": "knex migrate:make"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
   },
   "homepage": "https://github.com/northcoders/be-nc-news#readme",
   "dependencies": {
-    "jest": "^25.5.4"
+    "jest": "^25.5.4",
+    "knex": "^0.21.1",
+    "pg": "^8.0.3"
   },
   "devDependencies": {}
 }
